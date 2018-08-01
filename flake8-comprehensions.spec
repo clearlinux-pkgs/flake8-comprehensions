@@ -6,13 +6,13 @@
 #
 Name     : flake8-comprehensions
 Version  : 1.4.1
-Release  : 1
+Release  : 2
 URL      : https://files.pythonhosted.org/packages/34/07/cd53c9ae3275f5f52c5ec196b36b3cd5a71e943b199cef18ffaaf4761338/flake8-comprehensions-1.4.1.tar.gz
 Source0  : https://files.pythonhosted.org/packages/34/07/cd53c9ae3275f5f52c5ec196b36b3cd5a71e943b199cef18ffaaf4761338/flake8-comprehensions-1.4.1.tar.gz
 Source99 : https://files.pythonhosted.org/packages/34/07/cd53c9ae3275f5f52c5ec196b36b3cd5a71e943b199cef18ffaaf4761338/flake8-comprehensions-1.4.1.tar.gz.asc
 Summary  : A flake8 plugin to help you write better list/set/dict comprehensions.
 Group    : Development/Tools
-License  : ISC ISCL
+License  : ISC
 Requires: flake8-comprehensions-python3
 Requires: flake8-comprehensions-license
 Requires: flake8-comprehensions-python
@@ -58,7 +58,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1533152279
+export SOURCE_DATE_EPOCH=1533160822
 python3 setup.py build -b py3
 
 %install
