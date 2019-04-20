@@ -4,7 +4,7 @@
 #
 Name     : flake8-comprehensions
 Version  : 2.0.0
-Release  : 3
+Release  : 4
 URL      : https://files.pythonhosted.org/packages/66/b3/393dcf78d7c3ed1fb36c7efd946087aba5b0fb16cf53e3a98868a156c319/flake8-comprehensions-2.0.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/66/b3/393dcf78d7c3ed1fb36c7efd946087aba5b0fb16cf53e3a98868a156c319/flake8-comprehensions-2.0.0.tar.gz
 Summary  : A flake8 plugin to help you write better list/set/dict comprehensions.
