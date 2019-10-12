@@ -5,11 +5,11 @@
 # Source0 file verified with key 0xEC7125C934883BE5 (me@adamj.eu)
 #
 Name     : flake8-comprehensions
-Version  : 2.1.0
-Release  : 6
-URL      : https://files.pythonhosted.org/packages/66/a5/bdd53689493bddcc02a7e5194006a1c6d00887b89ba4adf27f3f249739ff/flake8-comprehensions-2.1.0.tar.gz
-Source0  : https://files.pythonhosted.org/packages/66/a5/bdd53689493bddcc02a7e5194006a1c6d00887b89ba4adf27f3f249739ff/flake8-comprehensions-2.1.0.tar.gz
-Source1 : https://files.pythonhosted.org/packages/66/a5/bdd53689493bddcc02a7e5194006a1c6d00887b89ba4adf27f3f249739ff/flake8-comprehensions-2.1.0.tar.gz.asc
+Version  : 2.2.0
+Release  : 7
+URL      : https://files.pythonhosted.org/packages/ae/eb/62f8b101788a2cef642118adff287a4051e64c1a51cbb8931c2a02a1ace8/flake8-comprehensions-2.2.0.tar.gz
+Source0  : https://files.pythonhosted.org/packages/ae/eb/62f8b101788a2cef642118adff287a4051e64c1a51cbb8931c2a02a1ace8/flake8-comprehensions-2.2.0.tar.gz
+Source1 : https://files.pythonhosted.org/packages/ae/eb/62f8b101788a2cef642118adff287a4051e64c1a51cbb8931c2a02a1ace8/flake8-comprehensions-2.2.0.tar.gz.asc
 Summary  : A flake8 plugin to help you write better list/set/dict comprehensions.
 Group    : Development/Tools
 License  : ISC
@@ -21,8 +21,11 @@ BuildRequires : buildreq-distutils3
 BuildRequires : flake8
 
 %description
+=====================
 flake8-comprehensions
-        =====================
+=====================
+.. image:: https://img.shields.io/pypi/v/flake8-comprehensions.svg
+:target: https://pypi.org/project/flake8-comprehensions/
 
 %package license
 Summary: license components for the flake8-comprehensions package.
@@ -51,14 +54,15 @@ python3 components for the flake8-comprehensions package.
 
 
 %prep
-%setup -q -n flake8-comprehensions-2.1.0
+%setup -q -n flake8-comprehensions-2.2.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1564945695
+export SOURCE_DATE_EPOCH=1570910024
+# -Werror is for werrorists
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib

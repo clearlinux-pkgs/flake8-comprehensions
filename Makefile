@@ -1,5 +1,5 @@
 PKG_NAME := flake8-comprehensions
-URL = https://files.pythonhosted.org/packages/66/a5/bdd53689493bddcc02a7e5194006a1c6d00887b89ba4adf27f3f249739ff/flake8-comprehensions-2.1.0.tar.gz
+URL = https://files.pythonhosted.org/packages/ae/eb/62f8b101788a2cef642118adff287a4051e64c1a51cbb8931c2a02a1ace8/flake8-comprehensions-2.2.0.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
