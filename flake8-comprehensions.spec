@@ -5,21 +5,19 @@
 # Source0 file verified with key 0xEC7125C934883BE5 (me@adamj.eu)
 #
 Name     : flake8-comprehensions
-Version  : 3.0.0
-Release  : 8
-URL      : https://files.pythonhosted.org/packages/65/82/cc040f3e09fb795aab330e7e91653167a71dbe5a56d812069bd85dbd8076/flake8-comprehensions-3.0.0.tar.gz
-Source0  : https://files.pythonhosted.org/packages/65/82/cc040f3e09fb795aab330e7e91653167a71dbe5a56d812069bd85dbd8076/flake8-comprehensions-3.0.0.tar.gz
-Source1 : https://files.pythonhosted.org/packages/65/82/cc040f3e09fb795aab330e7e91653167a71dbe5a56d812069bd85dbd8076/flake8-comprehensions-3.0.0.tar.gz.asc
+Version  : 3.0.1
+Release  : 9
+URL      : https://files.pythonhosted.org/packages/f9/6e/b90d98de08e8696fc377e2d1fcd1cb1332fc6e60befcd47d32c0e893839d/flake8-comprehensions-3.0.1.tar.gz
+Source0  : https://files.pythonhosted.org/packages/f9/6e/b90d98de08e8696fc377e2d1fcd1cb1332fc6e60befcd47d32c0e893839d/flake8-comprehensions-3.0.1.tar.gz
+Source1 : https://files.pythonhosted.org/packages/f9/6e/b90d98de08e8696fc377e2d1fcd1cb1332fc6e60befcd47d32c0e893839d/flake8-comprehensions-3.0.1.tar.gz.asc
 Summary  : A flake8 plugin to help you write better list/set/dict comprehensions.
 Group    : Development/Tools
 License  : ISC
 Requires: flake8-comprehensions-license = %{version}-%{release}
 Requires: flake8-comprehensions-python = %{version}-%{release}
 Requires: flake8-comprehensions-python3 = %{version}-%{release}
-Requires: cached-property
 Requires: flake8
 BuildRequires : buildreq-distutils3
-BuildRequires : cached-property
 BuildRequires : flake8
 BuildRequires : util-linux
 
@@ -57,14 +55,14 @@ python3 components for the flake8-comprehensions package.
 
 
 %prep
-%setup -q -n flake8-comprehensions-3.0.0
+%setup -q -n flake8-comprehensions-3.0.1
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1572102789
+export SOURCE_DATE_EPOCH=1572286181
 # -Werror is for werrorists
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
@@ -81,7 +79,7 @@ python3 setup.py build
 export MAKEFLAGS=%{?_smp_mflags}
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/flake8-comprehensions
-cp %{_builddir}/flake8-comprehensions-3.0.0/LICENSE %{buildroot}/usr/share/package-licenses/flake8-comprehensions/3b98f67b904745157b7acca53f96f7aa7bd2d01c
+cp %{_builddir}/flake8-comprehensions-3.0.1/LICENSE %{buildroot}/usr/share/package-licenses/flake8-comprehensions/3b98f67b904745157b7acca53f96f7aa7bd2d01c
 python3 -tt setup.py build  install --root=%{buildroot}
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
