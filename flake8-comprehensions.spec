@@ -5,11 +5,11 @@
 # Source0 file verified with key 0xEC7125C934883BE5 (me@adamj.eu)
 #
 Name     : flake8-comprehensions
-Version  : 3.2.2
-Release  : 17
-URL      : https://files.pythonhosted.org/packages/8c/9b/26d0d2ab67e16500c8e68db07e66335f4a51fa1236a794e21ba670ac0dc4/flake8-comprehensions-3.2.2.tar.gz
-Source0  : https://files.pythonhosted.org/packages/8c/9b/26d0d2ab67e16500c8e68db07e66335f4a51fa1236a794e21ba670ac0dc4/flake8-comprehensions-3.2.2.tar.gz
-Source1  : https://files.pythonhosted.org/packages/8c/9b/26d0d2ab67e16500c8e68db07e66335f4a51fa1236a794e21ba670ac0dc4/flake8-comprehensions-3.2.2.tar.gz.asc
+Version  : 3.2.3
+Release  : 18
+URL      : https://files.pythonhosted.org/packages/9a/f9/60063957dd096966b5323b0c7a3aa33e4ae81f0ef675d80bc8655c6347c7/flake8-comprehensions-3.2.3.tar.gz
+Source0  : https://files.pythonhosted.org/packages/9a/f9/60063957dd096966b5323b0c7a3aa33e4ae81f0ef675d80bc8655c6347c7/flake8-comprehensions-3.2.3.tar.gz
+Source1  : https://files.pythonhosted.org/packages/9a/f9/60063957dd096966b5323b0c7a3aa33e4ae81f0ef675d80bc8655c6347c7/flake8-comprehensions-3.2.3.tar.gz.asc
 Summary  : A flake8 plugin to help you write better list/set/dict comprehensions.
 Group    : Development/Tools
 License  : ISC
@@ -44,22 +44,22 @@ python3 components for the flake8-comprehensions package.
 
 
 %prep
-%setup -q -n flake8-comprehensions-3.2.2
-cd %{_builddir}/flake8-comprehensions-3.2.2
+%setup -q -n flake8-comprehensions-3.2.3
+cd %{_builddir}/flake8-comprehensions-3.2.3
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1583534282
+export SOURCE_DATE_EPOCH=1591625838
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
 export NM=gcc-nm
 export CFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
-export FCFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
-export FFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
+export FCFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=4 "
+export FFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=4 "
 export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=4 "
 export MAKEFLAGS=%{?_smp_mflags}
 python3 setup.py build
