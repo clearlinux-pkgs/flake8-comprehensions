@@ -6,7 +6,7 @@
 #
 Name     : flake8-comprehensions
 Version  : 3.2.3
-Release  : 18
+Release  : 19
 URL      : https://files.pythonhosted.org/packages/9a/f9/60063957dd096966b5323b0c7a3aa33e4ae81f0ef675d80bc8655c6347c7/flake8-comprehensions-3.2.3.tar.gz
 Source0  : https://files.pythonhosted.org/packages/9a/f9/60063957dd096966b5323b0c7a3aa33e4ae81f0ef675d80bc8655c6347c7/flake8-comprehensions-3.2.3.tar.gz
 Source1  : https://files.pythonhosted.org/packages/9a/f9/60063957dd096966b5323b0c7a3aa33e4ae81f0ef675d80bc8655c6347c7/flake8-comprehensions-3.2.3.tar.gz.asc
